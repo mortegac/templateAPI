@@ -1,0 +1,8 @@
+version: '2'
+services: 
+  mongodb:
+      image: mongo:3.2
+      volumes:
+         - ./publicData/mongoDb:/data/db
+      ports:
+         - "27020:27017"  #Port Local 27020
