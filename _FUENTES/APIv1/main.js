@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use(cors())
 
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 3000
 const router = express.Router();  
 
 
@@ -32,10 +32,9 @@ const publicRoute  = publicRoutes.map (p => 	app.use('/api', p) );
 const privateRoute = privateRoutes.map(p => 	app.use('/api/private', p) );
 
 
-
 // START THE SERVER
 // =============================================================================
-mongoose.createConnection('mongodb://127.0.0.1:27020/gcaProyectos',(err, res)=> {
+mongoose.createConnection('mongodb://127.0.0.1:27020/GCA_Directorio',(err, res)=> {
     if(err){
         return console.log(`Error al conectar con la Base de Datos ${err}`)
     }
@@ -44,7 +43,7 @@ mongoose.createConnection('mongodb://127.0.0.1:27020/gcaProyectos',(err, res)=> 
 })
 
 
-console.log('Running in port ' + port);
+//console.log('Running in port ' + port);
 
 
 export default app

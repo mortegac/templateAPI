@@ -1,7 +1,7 @@
 {
-  "name": "nodejsconjwt",
-  "version": "1.0.0",
-  "description": "Aplicación API con nodejs y MongoDb",
+  "name": "API-PROYECTOS",
+  "version": "1.0.1",
+  "description": "API de gestion de Proyectos, Tareas",
   "main": "main.js",
   "scripts": {
     "start": "nodemon index.js"

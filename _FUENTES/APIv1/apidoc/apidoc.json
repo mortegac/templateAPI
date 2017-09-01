@@ -1,0 +1,7 @@
+{
+    "name": "API v1",
+    "version": "0.1.0",
+    "description": "Ejemplo utilizando apiDoc",
+    "title": "Documentación de la API",
+    "url" : "https://github.com/mortegac/templateAPI"
+  }
